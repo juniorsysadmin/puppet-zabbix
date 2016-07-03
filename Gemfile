@@ -27,6 +27,8 @@ group :test do
   gem 'voxpupuli-release',                                          :require => false, :git => 'https://github.com/voxpupuli/voxpupuli-release-gem.git'
   gem 'puppet-strings',                                             :require => false, :git => 'https://github.com/puppetlabs/puppetlabs-strings.git'
   gem 'rubocop-rspec', '~> 1.5',                                    :require => false
+  # rest-client is required by puppet-blacksmith, but 2.x requires Ruby 2.0 or above
+  gem 'rest-client', '~> 1.8',                                      :require => false
 end
 
 group :development do
